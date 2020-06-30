@@ -1,6 +1,5 @@
-// import { Person } from './person';
-
-import { Person } from './person';
+import { Genre } from './genre.enum';
+import { Rating } from './rating.enum';
 
 export class Movie {
   public id: number ;
@@ -8,5 +7,6 @@ export class Movie {
   public description: string;
   public recommended: boolean;
   public cast: string;
-  // public cast: Person[];
+  public genre: Genre;
+  public rating: Rating;
 }

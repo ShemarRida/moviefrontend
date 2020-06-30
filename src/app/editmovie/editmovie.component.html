@@ -1,5 +1,3 @@
-<p>editmovie works!</p>
-
 <div class="container">
     <form (ngSubmit)="editMovieButton()">
       <div class="form-group">
@@ -25,6 +23,22 @@
       <div class="form-group">
         <label for="cast">Cast</label>
         <input type="text" class="form-control" required [(ngModel)]="movie.cast" name="cast" >
+      </div>
+
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <select class="form-control" required [(ngModel)]="movie.genre" name="genre">
+          <option selected>Choose a genre that best describes your movie</option>
+          <option *ngFor="let enum of genreEnum | keyvalue">{{enum.value}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <select class="form-control" required [(ngModel)]="movie.rating" name="rating">
+          <option selected>Select the rating for the movie</option>
+          <option *ngFor="let enum of ratingEnum | keyvalue">{{enum.value}}</option>
+        </select>
       </div>
 
       <button type="submit" class="btn btn-success">Submit</button>

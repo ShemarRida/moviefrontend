@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Movie } from '../movie';
 import { Router } from '@angular/router';
 import { DataService } from '../data.service';
+import { Genre } from '../genre.enum';
+import { Rating } from '../rating.enum';
 
 @Component({
   selector: 'app-addmovie',
@@ -11,6 +13,8 @@ import { DataService } from '../data.service';
 export class AddmovieComponent implements OnInit {
 // we need an object
 movie = new Movie();
+public genreEnum = Genre;
+public ratingEnum = Rating;
 
   constructor(private router: Router, private dataService: DataService) { }
 
