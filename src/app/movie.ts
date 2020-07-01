@@ -9,4 +9,6 @@ export class Movie {
   public cast: string;
   public genre: Genre;
   public rating: Rating;
+  public release_date: string;
+  public duration: number;
 }

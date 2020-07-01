@@ -41,6 +41,16 @@
         </select>
       </div>
 
+      <div class="form-group">
+        <label for="release_date">Release Date</label>
+        <input type="text" class="form-control" required [(ngModel)]="movie.release_date" name="release_date" >
+      </div>
+
+      <div class="form-group">
+        <label for="duration">Duration</label>
+        <input type="text" class="form-control" required [(ngModel)]="movie.duration" name="duration" >
+      </div>
+
       <button type="submit" class="btn btn-success">Submit</button>
       <button type="submit" class="btn btn-primary" (click)="goBackToList()">Go Back</button>
     </form>

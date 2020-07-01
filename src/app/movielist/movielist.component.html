@@ -10,6 +10,8 @@
         <th>Cast</th>
         <th>Genre</th>
         <th>Rating</th>
+        <th>Release Date</th>
+        <th>Duration</th>
       </tr>
     </thead>
     <tbody>
@@ -21,6 +23,8 @@
         <td>{{movie.cast}}</td>
         <td>{{movie.genre}}</td>
         <td>{{movie.rating}}</td>
+        <td>{{movie.release_date}}</td>
+        <td>{{movie.duration}}</td>
         <!-- Todo make buttons clickable -->
         <td><button type="button" class="btn btn-primary" (click)="goToEditMovie(movie.id)">Edit</button></td>
         <td><button type="button" class="btn btn-warning" (click)="goToViewMovie(movie.id)">View</button></td>
